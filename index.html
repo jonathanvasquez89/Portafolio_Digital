@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -26,257 +26,277 @@
 </head>
 
 <body>
-  <!-- Barra de Navegacion -->
-  <nav class="navbar navbar-expand-md  bg-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-toggler">
-        <a class="navbar-brand" href="#">
-          <img class="logo-nav" src="./imagenes/logo.jpg" alt="logo del nav">
-        </a>
-        <ul class="navbar-nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#testimonio">Testimonios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-
+  <header>
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-expand-md  bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img class="logo-nav" src="./imagenes/logo.jpg" alt="logo del nav">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#testimonio">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!--  Modo Dark - btn -->
+        <div>
+          <label for="modeDark" id="labelModeDark"><i class="bi bi-moon-stars-fill"></i></label>
+          <input type="checkbox" id="modeDark">
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Seccion HERO -->
-  <section class="hero align-items-stretch">
-    <div class="hero-principal d-flex flex-column justify-content-center align-items-center ">
-      <img class="hero-imagen-desarrollador rounded-circle border border-secondary border-3 shadow"
-        src="./imagenes/Screenshot_2.png" alt="Foto de Perfil" srcset="">
-      <h1>Hola, Soy Jonathan Vasquez</h1>
-      <h2>Desarollador Web</h2>
-    </div>
-    <div class="hero-inferior">
-      <img class="hero-inferior-imagen img-fluid" src="./imagenes/undraw_programming_re_kg9v.svg"
-        alt="Monitor, Laptop y logos de HTML, CSS, JavaScript, Bootstrap y Reatc">
-    </div>
-  </section>
-
-  <!-- Sobre Mi -->
-  <section id="sobre-mi" class="sobre-mi seccion-oscura">
-    <div class="contenedor">
-      <h2 class="seccion-titulo">Conoce a Jonathan Vasquez</h2>
-      <p class="seccion-texto"> Hola, soy Jonathan Vasquez me considero soñador, creador y apasionado por las cosas que hago. cree este <em> Portafolio</em> para compartir al mundo mis proyectos y ayudar a personas a crear sus sueños. soy amante de la tecnología y amante a su avance. comencé en este mundo tecnológico desde mi adolescencia y me anime a ser estudio en tiempo de pandemia en el 2020. desde entonces sigo estudiando y preparándome para llegar a ser un buen desarrollador Web. </p>
-    </div>
-  </section>
-
-  <!-- Experiencia -->
-  <section class="experiencia seccion-clara">
-    <div class="container text-center">
-      <div class="row">
-        <!-- desarrolo web -->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-laptop"></i>
-          <h4 class="experiencia-titulo">Desarrollo Web</h4>
-          <p>He adquirído herramientas para crear sitios web atractivos utilizando estos lenguajes</p>
-          <div class="badges-contenedor">
-            <span class="badge text-bg-secondary">HTML5</span>
-            <span class="badge text-bg-secondary">CSS3</span>
-            <span class="badge text-bg-secondary">JavaScript</span>
-            <span class="badge text-bg-secondary">Bootstrap</span>
-          </div>
-        </div>
-        <!-- Articulo -->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-laptop"></i>
-          <h4 class="experiencia-titulo">Proyectos</h4>
-          <p> Por el momento solo he creado proyectos escolares, mejorando así mis habilidades como Desarrollador Web </p>
-          <div class="badges-contenedor">
-            <span class="badge text-bg-secondary">Recetas</span>
-            <span class="badge text-bg-secondary">Paginas Web</span>
-            <span class="badge text-bg-secondary">Portafolio</span>
-            <span class="badge text-bg-secondary">Otros</span>
-          </div>
-        </div>
-        <!-- Estudiante -->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-laptop"></i>
-          <h4 class="experiencia-titulo">Estudiante</h4>
-          <p>He realizado Distintos Cursos las cuales me han ayudado a crecer en mis conocimientos.</p>
-          <div class="badges-contenedor">
-            <span class="badge text-bg-secondary">FreCodeCamp</span>
-            <span class="badge text-bg-secondary">UTN</span>
-            <span class="badge text-bg-secondary">Potrero Digital</span>
-            <span class="badge text-bg-secondary">Open Bootcamp</span>
-            <span class="badge text-bg-secondary">Google Active</span>
-          </div>
-        </div>
-
+    </nav>
+    <!-- Seccion HERO -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center ">
+        <img class="hero-imagen-desarrollador rounded-circle border border-secondary border-3 shadow"
+          src="./imagenes/Screenshot_2.png" alt="Foto de Perfil" srcset="">
+        <h1>Hola, Soy Jonathan Vasquez</h1>
+        <h2>Desarollador Web</h2>
       </div>
-    </div>
-  </section>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="./imagenes/undraw_programming_re_kg9v.svg"
+          alt="Monitor, Laptop y logos de HTML, CSS, JavaScript, Bootstrap y Reatc">
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- Sobre Mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Jonathan Vasquez</h2>
+        <p class="seccion-texto"> Hola, soy Jonathan Vasquez me considero soñador, creador y apasionado por las cosas
+          que
+          hago. cree este <em> Portafolio</em> para compartir al mundo mis proyectos y ayudar a personas a crear sus
+          sueños. soy amante de la tecnología y amante a su avance. comencé en este mundo tecnológico desde mi
+          adolescencia y me anime a ser estudio en tiempo de pandemia en el 2020. desde entonces sigo estudiando y
+          preparándome para llegar a ser un buen desarrollador Web. </p>
+      </div>
+    </section>
 
-  <!-- Proyectos -->
-  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-    <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
-    <h3 class="seccion-decripcion">Estos son algunos proyectos que he creado recientemente.</h3>
-    <!-- Galeria de Proyectos -->
-    <div class="container text-center proyectos-contenedor">
-      <div class="row">
-        <!-- Proyecto 1 -->
-         <div class="col-12 col-md-6 "> <!-- cuando coloque mas proyectos, agg ==> col-lg-4 -->
-          <div class="proyecto">
-            <img src="./imagenes/proyecto1.jpg" alt="proyecto 1">
-            <div class="overlay">
-              <p>Proyecto - Receta Venezolana</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/jonathanvasquez89/front-end_PD.git" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="https://jonathanvasquez89.github.io/front-end_PD/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- desarrolo web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <h4 class="experiencia-titulo">Desarrollo Web</h4>
+            <p>He adquirído herramientas para crear sitios web atractivos utilizando estos lenguajes</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-secondary">HTML5</span>
+              <span class="badge text-bg-secondary">CSS3</span>
+              <span class="badge text-bg-secondary">JavaScript</span>
+              <span class="badge text-bg-secondary">Bootstrap</span>
+            </div>
+          </div>
+          <!-- Articulo -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <h4 class="experiencia-titulo">Proyectos</h4>
+            <p> Por el momento solo he creado proyectos escolares, mejorando así mis habilidades como Desarrollador Web
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-secondary">Recetas</span>
+              <span class="badge text-bg-secondary">Paginas Web</span>
+              <span class="badge text-bg-secondary">Portafolio</span>
+              <span class="badge text-bg-secondary">Otros</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <h4 class="experiencia-titulo">Estudiante</h4>
+            <p>He realizado Distintos Cursos las cuales me han ayudado a crecer en mis conocimientos.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-secondary">FreCodeCamp</span>
+              <span class="badge text-bg-secondary">UTN</span>
+              <span class="badge text-bg-secondary">Potrero Digital</span>
+              <span class="badge text-bg-secondary">Open Bootcamp</span>
+              <span class="badge text-bg-secondary">Google Active</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
+      <h3 class="seccion-decripcion">Estos son algunos proyectos que he creado recientemente.</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 ">
+            <!-- cuando coloque mas proyectos, agg ==> col-lg-4 -->
+            <div class="proyecto">
+              <img src="./imagenes/proyecto1.jpg" alt="proyecto 1">
+              <div class="overlay">
+                <p>Proyecto - Receta Venezolana</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jonathanvasquez89/front-end_PD.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jonathanvasquez89.github.io/front-end_PD/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 ">
+            <!-- cuando coloque mas proyectos, agg ==> col-lg-4 -->
+            <div class="proyecto">
+              <img src="./imagenes/proyecto2.jpg" alt="">
+              <div class="overlay">
+                <p>Proyecto - Tienda de Ropa</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jonathanvasquez89/BA_multiplica2.0.git" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jonathanvasquez89.github.io/BA_multiplica2.0/" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Proyecto 2 -->
-        <div class="col-12 col-md-6 "> <!-- cuando coloque mas proyectos, agg ==> col-lg-4 -->
-          <div class="proyecto">
-            <img src="./imagenes/proyecto2.jpg" alt="">
-            <div class="overlay">
-              <p>Proyecto - Tienda de Ropa</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/jonathanvasquez89/BA_multiplica2.0.git" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="https://jonathanvasquez89.github.io/BA_multiplica2.0/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> 
       </div>
-    </div>
-    <!-- <a href="#" target="_blank" rel="noopener noreferrer">
+      <!-- <a href="#" target="_blank" rel="noopener noreferrer">
       <button type="button" class="btn btn-info ">
         Var mas Proyectos
         <i class="bi bi-arrow-right-circle-fill"></i>
       </button>
     </a> -->
-  </section>
+    </section>
 
-  <!-- Articulos -->
-  <section class="articulos justify-content-start">
-    <h2 class="seccion-titulo texto-negro">Certificado</h2>
-    <div class="card">
-      <div class="card-header">
-        Mas Reciente
+    <!-- Certificados -->
+    <section class="certificados justify-content-start seccion-clara">
+      <h2 class="seccion-titulo texto-negro">Certificado</h2>
+      <div class="card">
+        <div class="card-header">
+          <h5>Mas Reciente</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="./imagenes/Certificado_Programación_Front_End-Jonathan_Vasquez.pdf" target="_blank"
+            rel="noopener noreferrer">
+            <li class="list-group-item">Certificado de Programación Front End - 2020 - Potrero Digital</li>
+          </a>
+          <a href="./imagenes/Certificado_Habilidades_Socio_Emocionales-Jonathan Vasquez.pdf" target="_blank"
+            rel="noopener noreferrer">
+            <li class="list-group-item">Certificado Habilidades Socio Emocionales - 2020 - Potrero Digital</li>
+          </a>
+          <a href="./imagenes/Certificado_desarrollo_web_google.pdf" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Certificado Desarollodor Web - 2022 - Google Active</li>
+          </a>
+        </ul>
       </div>
-      <ul class="list-group list-group-flush">
-        <a href="./imagenes/Certificado_Programación_Front_End-Jonathan_Vasquez.pdf" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">Certificado de Programación Front End - 2020 - Potrero Digital</li>
-        </a>
-        <a href="./imagenes/Certificado_Habilidades_Socio_Emocionales-Jonathan Vasquez.pdf" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">Certificado Habilidades Socio Emocionales - 2020 - Potrero Digital</li>
-        </a>
-        <a href="./imagenes/Certificado_desarrollo_web_google.pdf" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">Certificado Desarollodor Web - 2022 - Google Active</li>
-        </a>
-      </ul>
-    </div>
-    <!-- <button type="button" class="btn btn-info">
+      <!-- <button type="button" class="btn btn-info">
       Ver Más Proyectos
       <i class="bi bi-arrow-right-circle-fill"></i>
     </button> -->
-  </section>
+    </section>
 
-  <!-- Testimonio -->
-  <section id="testimonio" class="testimonio seccion-clara">
-    <h2 class="seccion-titulo">Testimonios</h2>
-    <h3 class="seccion-descripcion ">Algunos testimonio de mis Clientes</h3>
+    <!-- Testimonio -->
+    <section id="testimonio" class="testimonio seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion ">Algunos testimonio de mis Clientes</h3>
 
-    <!-- Carrusel -->
-    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.jpg" alt="carusel-clientes">
-            <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa amet repellat
-              cum saepe autem in quasi illo doloremque.</p>
-            <div class="testimonio-info">
-              <p class="cliente">Vero</p>
-              <p class="cargo">Diseñadora de Moda</p>
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.jpg" alt="carusel-clientes">
+              <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa amet repellat
+                cum saepe autem in quasi illo doloremque.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Vero</p>
+                <p class="cargo">Diseñadora de Moda</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.jpg" alt="carusel-clientes">
+              <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa amet repellat
+                cum saepe autem in quasi illo doloremqu.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Giro</p>
+                <p class="cargo">Gerente de proyectos en Desarolo-Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.jpg" alt="carusel-clientes">
+              <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa amet repellat
+                cum saepe autem in quasi illo doloremque.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Monica</p>
+                <p class="cargo">Empresaria - Compañias Textil</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.jpg" alt="carusel-clientes">
-            <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa amet repellat
-              cum saepe autem in quasi illo doloremqu.</p>
-            <div class="testimonio-info">
-              <p class="cliente">Giro</p>
-              <p class="cargo">Gerente de proyectos en Desarolo-Web</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.jpg" alt="carusel-clientes">
-            <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa amet repellat
-              cum saepe autem in quasi illo doloremque.</p>
-            <div class="testimonio-info">
-              <p class="cliente">Monica</p>
-              <p class="cargo">Empresaria - Compañias Textil</p>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev btn-carrusel" type="button" data-bs-target="#testimonios-carrusel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next btn-carrusel" type="button" data-bs-target="#testimonios-carrusel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-      <button class="carousel-control-prev btn-carrusel" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next btn-carrusel" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="contacto seccion-oscura">
-    <div class="container">
-      <div class="contaiener text-center rectanguo d-flex justify-content-evenly">
-        <div class="row">
-          <div class="col-12 col-md-4 seccion-titulo">
-            ¡Hablemos!
-          </div>
-          <div class="col-12 col-md-4 descripcion">
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="contaiener text-center rectanguo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
               Contactame para iniciar tu proyecto de desarrollo web y haré que tu vision se vuleva realidad.
-          </div>
-          <div class="col-12 col-md-4">
-            <a href="mailto:jonat89.dev@gmail.com">
-              <button type="button">
-                Contacto
-                <i class="bi bi-envelope-check-fill"></i>
-              </button>
-            </a>
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:jonat89.dev@gmail.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </main>
   <!-- pie de pagina -->
   <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
     <img class="footer-icono" src="imagenes/logo.jpg" alt="logo del portafoli">
@@ -291,7 +311,8 @@
       <a href="https://www.linkedin.com/in/jonathan-vasquez-dev/" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-linkedin"></i>
       </a>
-      <a href="https://api.whatsapp.com/send/?phone=%2B541155283823&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+      <a href="https://api.whatsapp.com/send/?phone=%2B541155283823&text&type=phone_number&app_absent=0" target="_blank"
+        rel="noopener noreferrer">
         <i class="bi bi-whatsapp"></i>
       </a>
     </div>
@@ -300,7 +321,8 @@
 
 
   <!-- JavaScript -->
-  <script src="index.js"></script>
+  <script src="./js/index.js"></script>
+
   <!-- JavaScript Bundle with Popper Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">

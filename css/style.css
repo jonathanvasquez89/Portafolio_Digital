@@ -237,6 +237,7 @@ h1 {
 }
 .proyecto {
   position: relative;
+  margin: 25px 10px;
 }
 
 .proyecto:hover img {

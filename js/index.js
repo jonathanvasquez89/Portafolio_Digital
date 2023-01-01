@@ -1,3 +1,4 @@
+
 // Mode Dark
 const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const modeDark = document.getElementById('modeDark');
@@ -12,11 +13,11 @@ modeDark.addEventListener('change', (event) => {
     
     let checked = event.target.checked;
     if (checked == true) {
-        labelModeDark.innerHTML = '<i class="bi bi-brightness-low-fill"></i>';
-        labelModeDark.style.color = '#c89735';
-    } else {
         labelModeDark.innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
         labelModeDark.style.color = '#434343';
+    } else {
+        labelModeDark.innerHTML = '<i class="bi bi-brightness-low-fill"></i>';
+        labelModeDark.style.color = '#c89735';
     }
     setTheme(switchTotheme); 
 });

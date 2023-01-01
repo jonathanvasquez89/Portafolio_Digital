@@ -63,7 +63,7 @@ body {
 #labelModeDark {
   margin: 20px;
   font-size: 2rem;
-  color: #4b4b4b;
+  color: #c89735;
   cursor: pointer;
 }
 
@@ -286,7 +286,29 @@ h1 {
   
 }
 
+/* curriculum */
+.curriculum {
+  min-height: 500px;
+  padding: 30px;
 
+}
+
+.curriculum .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+  background: var(--bg-caja);
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
 
 /* Testimonio */
 .testimonios {

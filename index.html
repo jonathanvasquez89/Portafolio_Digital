@@ -62,9 +62,9 @@
     </nav>
     <!-- Seccion HERO -->
     <section class="hero align-items-stretch">
-      <div class="hero-principal d-flex flex-column justify-content-center align-items-center ">
+      <div class="hero-principal ">
         <img class="hero-imagen-desarrollador rounded-circle border border-secondary border-3 shadow"
-          src="./imagenes/Screenshot_2.png" alt="Foto de Perfil" srcset="">
+          src="./imagenes/Screenshot_2.png" alt="Foto de Perfil">
         <h1>Hola, Soy Jonathan Vasquez</h1>
         <h2>Desarollador Web</h2>
       </div>
@@ -100,7 +100,9 @@
               <span class="badge text-bg-secondary">HTML5</span>
               <span class="badge text-bg-secondary">CSS3</span>
               <span class="badge text-bg-secondary">JavaScript</span>
+              <span class="badge text-bg-secondary">Java</span>
               <span class="badge text-bg-secondary">Bootstrap</span>
+              <span class="badge text-bg-secondary">Git</span>
             </div>
           </div>
           <!-- Articulo -->
@@ -133,6 +135,57 @@
         </div>
       </div>
     </section>
+    <!-- BARRA - PROGRESO -->
+    <div class="conatainer-barra ">
+      <!-- barra - HTML -->
+      <div class="barra_progress">
+        <img class="img-barra" src="imagenes/Img_HTML.png" alt="Img_HTML">
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="95"      aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 95%">95%</div>
+        </div>
+      </div>
+      <!-- barra - CSS -->
+      <div class="barra_progress">
+        <img class="img-barra" src="imagenes/Img_CSS.png" alt="Img_CSS">
+        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="85"      aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 85%">85%</div>
+        </div>
+      </div>
+      <!-- barra - JAVASCRIPT -->
+      <div class="barra_progress">
+        <img class="img-barra" src="imagenes/Img_JS.jpg" alt="">
+        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="78"      aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 78%">78%</div>
+        </div>
+      </div>
+      <!-- barra - BOOTSTRAP -->
+      <div class="barra_progress">
+        <img class="img-barra" src="imagenes/Img_BOTS.png" alt="">
+        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="90"      aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%">90%</div>
+        </div>
+      </div>
+      <!-- barra - JAVA -->
+      <div class="barra_progress">
+        <img class="img-barra" src="imagenes/Img_JAVA.png" alt="">
+        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="50"      aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width: 50%">50%</div>
+        </div>
+      </div> 
+    </div>
+
+     <!-- Curriculum -->
+     <div class="text-center flex-wrap d-flex cv_conatainer justify-content-center align-items-center gap-3">
+        <div class="flex-colum">
+          <h3 class="seccion-titulo">Descargar Curriculum</h3>
+          <button class="boton-cv">
+            <a class="link-cv" href="imagenes/Jonathan-Vasquez_Currículum.pdf" download="Jonathan-Vasquez_CV"><i class="bi bi-arrow-down-circle-fill icon-cv gap-2"></i>Descarga CV</a>
+          </button>
+        </div>
+        <div class="img-conatiner img-fluid">
+          <img class="img-cv" src="imagenes/undraw_online_cv_re_gn0a.svg" alt="img-cv">
+        </div>
+     </div>
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
@@ -220,20 +273,7 @@
     </button> -->
     </section>
 
-    <!-- Curriculum -->
-    <section class="curriculum justify-content-start seccion-clara">
-      <h2 class="seccion-titulo texto-negro">Currículum</h2>
-      <div class="card">
-        <div class="card-header">
-          <h5></h5>
-        </div>
-        <ul class="list-group list-group-flush">
-          <a href="./imagenes/Jonathan-Vasquez_Currículum.pdf" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item text-center">Haga click aquí para ver CV</li>
-          </a>
-        </ul>
-      </div>
-    </section>
+   
 
     <!-- Testimonio -->
   <!--  <section id="testimonio" class="testimonio seccion-clara">

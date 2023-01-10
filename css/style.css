@@ -33,7 +33,7 @@ body {
 
 /* Barra de NAV */
 .navbar {
-  padding: 2rem;
+  padding: .30rem;
   background-color: #e7e7e7;
   border-bottom:1px solid #868443;
 }
@@ -124,6 +124,12 @@ h1 {
 
 /* Seccion HERO */
 .hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   min-height: 450px;
   text-align: center;
 }
@@ -143,9 +149,14 @@ h1 {
   margin: 20px;
 }
 
+.hero-inferior-imagen {
+  width: 400px;
+  height: 450px;
+}
+
 /* Sobre mi */
 .sobre-mi {
-  height: 500px;
+  height: 120vh;
   padding: 10px;
 }
 
@@ -199,6 +210,70 @@ h1 {
 
 .badge {
   margin: 5px;
+}
+/* Barra - progreso */
+.conatainer-barra {
+  width: 100%;
+  height: 90vh;
+}
+
+.barra_progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-barra {
+  width: 50px;
+  height: 60px;
+  padding: 5px;
+  background-color: #ffffff;
+  margin: 10px;
+  border-radius: 5px 15px;
+  object-fit: cover;
+}
+
+.progress {
+  width: 50%;
+}
+
+
+/* curriculum */
+.boton-cv {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid var(--text);
+  box-shadow: 0px -3px 15px rgba(238, 238, 238, 0.154);
+  cursor: pointer;
+}
+.boton-cv:hover {
+  background-color: #1b1b32;
+  transition:all .50s ease ;
+}
+
+.link-cv {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.link-cv:hover {
+  color: #c89735;
+}
+
+.icon-cv {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.img-cv {
+  width: 500px;
+  height: 500px;
+  margin: 60px 0;
 }
 
 /* Proyectos */
@@ -264,6 +339,7 @@ h1 {
 
 /* Certificados */
 .certificados {
+  height: 120vh;
   min-height: 500px;
   padding: 30px;
 
@@ -286,29 +362,7 @@ h1 {
   
 }
 
-/* curriculum */
-.curriculum {
-  min-height: 500px;
-  padding: 30px;
 
-}
-
-.curriculum .card {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px;
-  background: var(--bg-caja);
-}
-
-.card-header {
-  font-weight: bold;
-}
-
-.list-group-item {
-  font-size: 1rem;
-  font-weight: bold;
-  
-}
 
 /* Testimonio */
 .testimonios {
@@ -504,8 +558,13 @@ footer {
   .logo-nav {
     width: 100px;
     height: 80px;
-    border-radius: 20px;
-    
+    border-radius: 20px; 
+  }
+
+  .img-cv {
+    width: 360px;
+    height: 300px;
+    margin: 60px 0;
   }
 }
 

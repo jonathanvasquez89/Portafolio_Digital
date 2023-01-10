@@ -51,6 +51,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cv">CV</a>
+            </li>
           </ul>
         </div>
         <!--  Modo Dark - btn -->
@@ -63,7 +66,7 @@
     <!-- Seccion HERO -->
     <section class="hero align-items-stretch">
       <div class="hero-principal ">
-        <img class="hero-imagen-desarrollador rounded-circle border border-secondary border-3 shadow"
+        <img class="hero-imagen-desarrollador "
           src="./imagenes/foto-perfil.jpg" alt="Foto de Perfil">
         <h1>Hola, Soy Jonathan Vasquez</h1>
         <h2>Desarollador Web</h2>
@@ -89,46 +92,47 @@
 
     <!-- Experiencia -->
     <section class="experiencia seccion-clara">
-      <div class="container text-center">
+      <div class="container text-center text-bg-secondary">
         <div class="row">
           <!-- desarrolo web -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
-            <h4 class="experiencia-titulo">Desarrollador Web</h4>
+            <i class="bi bi-laptop laptop"></i>
+            <h4 class="experiencia-titulo">Tecnologias</h4>
             <p>He adquirído herramientas para crear sitios web atractivos utilizando estos lenguajes</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-secondary">HTML5</span>
-              <span class="badge text-bg-secondary">CSS3</span>
-              <span class="badge text-bg-secondary">JavaScript</span>
-              <span class="badge text-bg-secondary">Java</span>
-              <span class="badge text-bg-secondary">Bootstrap</span>
-              <span class="badge text-bg-secondary">Git</span>
+              <span class="badge-tecn"><i class="bi bi-filetype-html"></i></span>
+              <span class="badge-tecn "><i class="bi bi-filetype-css"></i></span>
+              <span class="badge-tecn "><i class="bi bi-filetype-js"></i></span>
+              <span class="badge-tecn "><i class="bi bi-filetype-java"></i></span>
+              <span class="badge-tecn "><i class="bi bi-bootstrap"></i></span>
+              <span class="badge-tecn "><i class="bi bi-git"></i></span>
+              <span class="badge-tecn "><i class="bi bi-github"></i></span>
             </div>
           </div>
           <!-- Articulo -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
+            <i class="bi bi-laptop laptop"></i>
             <h4 class="experiencia-titulo">Proyectos</h4>
             <p> Por el momento solo he creado proyectos escolares, mejorando así mis habilidades como Desarrollador Web
             </p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-secondary">Recetas</span>
-              <span class="badge text-bg-secondary">Paginas Web</span>
-              <span class="badge text-bg-secondary">Portafolio</span>
-              <span class="badge text-bg-secondary">Otros</span>
+              <span class="badge">Recetas</span>
+              <span class="badge">Paginas Web</span>
+              <span class="badge">Portafolio</span>
+              <span class="badge">Otros</span>
             </div>
           </div>
           <!-- Estudiante -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
+            <i class="bi bi-laptop laptop"></i>
             <h4 class="experiencia-titulo">Estudiante</h4>
             <p>He realizado Distintos Cursos las cuales me han ayudado a crecer en mis conocimientos.</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-secondary">FreCodeCamp</span>
-              <span class="badge text-bg-secondary">UTN</span>
-              <span class="badge text-bg-secondary">Potrero Digital</span>
-              <span class="badge text-bg-secondary">Open Bootcamp</span>
-              <span class="badge text-bg-secondary">Google Active</span>
+              <span class="badge">FreCodeCamp</span>
+              <span class="badge">UTN</span>
+              <span class="badge">Potrero Digital</span>
+              <span class="badge">Open Bootcamp</span>
+              <span class="badge">Google Active</span>
             </div>
           </div>
 
@@ -136,46 +140,67 @@
       </div>
     </section>
     <!-- BARRA - PROGRESO -->
-    <div class="conatainer-barra ">
-      <!-- barra - HTML -->
-      <div class="barra_progress">
-        <img class="img-barra" src="imagenes/Img_HTML.png" alt="Img_HTML">
-          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="95"      aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 95%">95%</div>
+    <div class="container-skills">
+      <h2 class="seccion-titulo text-center">Skills</h2>
+      <!-- Skills HTML -->
+      <h5 class="seccion-decripcion text-center">HTML</h5>
+      <div class="skills">
+        <div class="container-bar">
+          <img class="img-skills" src="imagenes/Img_HTML.png" alt="img-html">
+          <div class="bar">
+            <div id="bar-html" class="progress-bar"></div>
+          </div>
+          <span class="seccion-decripcion">95%</span>
         </div>
       </div>
-      <!-- barra - CSS -->
-      <div class="barra_progress">
-        <img class="img-barra" src="imagenes/Img_CSS.png" alt="Img_CSS">
-        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="85"      aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 85%">85%</div>
+        <!-- Skills CSS -->
+      <h5 class="seccion-decripcion text-center">CSSL</h5>
+      <div class="skills">
+        <div class="container-bar">
+          <img class="img-skills" src="imagenes/Img_CSS.png" alt="img-html">
+          <div class="bar">
+            <div id="bar-css" class="progress-bar"></div>
+          </div>
+          <span class="seccion-decripcion">85%</span>
         </div>
       </div>
-      <!-- barra - JAVASCRIPT -->
-      <div class="barra_progress">
-        <img class="img-barra" src="imagenes/Img_JS.jpg" alt="">
-        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="78"      aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 78%">78%</div>
+        <!-- Skills Js -->
+      <h5 class="seccion-decripcion text-center">JavaScript</h5>
+      <div class="skills">
+        <div class="container-bar">
+          <img class="img-skills" src="imagenes/Img_JS.jpg" alt="img-html">
+          <div class="bar">
+            <div id="bar-js" class="progress-bar"></div>
+          </div>
+          <span class="seccion-decripcion">65%</span>
         </div>
       </div>
-      <!-- barra - BOOTSTRAP -->
-      <div class="barra_progress">
-        <img class="img-barra" src="imagenes/Img_BOTS.png" alt="">
-        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="90"      aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%">90%</div>
+        <!-- Skills Bootstrap -->
+      <h5 class="seccion-decripcion text-center">Bootstrap</h5>
+      <div class="skills">
+        <div class="container-bar">
+          <img class="img-skills" src="imagenes/Img_BOTS.png" alt="img-html">
+          <div class="bar">
+            <div id="bar-boost" class="progress-bar"></div>
+          </div>
+          <span class="seccion-decripcion">90%</span>
         </div>
       </div>
-      <!-- barra - JAVA -->
-      <div class="barra_progress">
-        <img class="img-barra" src="imagenes/Img_JAVA.png" alt="">
-        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="50"      aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width: 50%">50%</div>
+        <!-- Skills Java -->
+        <h5 class="seccion-decripcion text-center">Java</h5>
+      <div class="skills">
+        <div class="container-bar">
+          <img class="img-skills" src="imagenes/Img_JAVA.png" alt="img-html">
+          <div class="bar">
+            <div id="bar-java" class="progress-bar"></div>
+          </div>
+          <span class="seccion-decripcion">40%</span>
         </div>
-      </div> 
+      </div>
     </div>
 
      <!-- Curriculum -->
-     <div class="text-center flex-wrap d-flex cv_conatainer justify-content-center align-items-center gap-3">
+     <div id="cv" class="text-center flex-wrap d-flex cv_conatainer justify-content-center align-items-center gap-3">
         <div class="flex-colum">
           <h3 class="seccion-titulo">Descargar Curriculum</h3>
           <button class="boton-cv">
@@ -251,26 +276,22 @@
           <h5>Mas Reciente</h5>
         </div>
         <ul class="list-group list-group-flush">
-          <a href="./imagenes/Certificado_Programación_Front_End-Jonathan_Vasquez.pdf" target="_blank"
+          <a class="link-certificado" href="./imagenes/Certificado_Programación_Front_End-Jonathan_Vasquez.pdf" target="_blank"
             rel="noopener noreferrer">
             <li class="list-group-item">Certificado de Programación Front End - 2020 - Potrero Digital</li>
           </a>
-          <a href="./imagenes/Certificado_Habilidades_Socio_Emocionales-Jonathan Vasquez.pdf" target="_blank"
+          <a class="link-certificado" href="./imagenes/Certificado_Habilidades_Socio_Emocionales-Jonathan Vasquez.pdf" target="_blank"
             rel="noopener noreferrer">
             <li class="list-group-item">Certificado Habilidades Socio Emocionales - 2020 - Potrero Digital</li>
           </a>
-          <a href="./imagenes/Certificado_desarrollo_web_google.pdf" target="_blank" rel="noopener noreferrer">
+          <a class="link-certificado" href="./imagenes/Certificado_desarrollo_web_google.pdf" target="_blank" rel="noopener noreferrer">
             <li class="list-group-item">Certificado Desarollodor Web - 2022 - Google Active</li>
           </a>
-          <a href="./imagenes/Programación-Certificado_BA_Multiplica.pdf" target="_blank" rel="noopener noreferrer">
+          <a class="link-certificado" href="./imagenes/Programación-Certificado_BA_Multiplica.pdf" target="_blank" rel="noopener noreferrer">
             <li class="list-group-item">Certificado Front-End - 2022 - UTN</li>
           </a>
         </ul>
       </div>
-      <!-- <button type="button" class="btn btn-info">
-      Ver Más Proyectos
-      <i class="bi bi-arrow-right-circle-fill"></i>
-    </button> -->
     </section>
 
    

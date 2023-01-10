@@ -147,6 +147,9 @@ h1 {
   width: 200px;
   height: 200px;
   margin: 20px;
+  border-radius: 100%;
+  border:3px solid var(--sub-text);
+  box-shadow: 0px 0px 10px var(--sub-text);
 }
 
 .hero-inferior-imagen {
@@ -172,7 +175,7 @@ h1 {
 
 .experiencia .columna {
   padding: 20px;
-  border: 2px solid #8080804d;
+  border: 2px solid #808080b9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,15 +185,16 @@ h1 {
 
 .experiencia .columna:hover {
   color: rgb(255, 255, 255);
-  background-color: #1b1b32;
+  background-color: #3795a6bd;
 }
 
-.experiencia i {
+.experiencia .laptop {
   font-size: 2.5rem;
-  color: #7ade30;
-  background-color: #353538;
+  color: #000000;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   padding: 8px 19px;
   border-radius: 50%;
+  border: 2px solid #0f5b5b7d;
 }
 
 
@@ -203,41 +207,78 @@ h1 {
 
 /* badges */
 .badges-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
+  gap: 5px;
 }
+.badge-tecn {
+  padding: 5px 8px;
+  border-radius: 100%;
+  background-color: #5b9d94;
+}
+
+.badge-tecn i {
+  font-size: 20px;
+}
+
 
 .badge {
   margin: 5px;
+  background-color: #5b9d94;
 }
 /* Barra - progreso */
-.conatainer-barra {
-  width: 100%;
-  height: 90vh;
+.container-skills {
+  width: 80%;
+  margin: 10px auto;
+  background-image: linear-gradient(-225deg, #2cd8d5bd 0%, #6f65fe3d 56%, #348d7783 100%);
+  border-radius: 20px;
+  border: 2px solid #00000065;
+  box-shadow: 0px 0px 30px 5px #ffffff33;
+  backdrop-filter: blur(20px);
 }
 
-.barra_progress {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.skills:not(:last-child) {
+  margin-bottom: 5px;
 }
 
-.img-barra {
-  width: 50px;
-  height: 60px;
+.img-skills {
   padding: 5px;
-  background-color: #ffffff;
-  margin: 10px;
-  border-radius: 5px 15px;
-  object-fit: cover;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  border-radius: 10px 5px;
 }
 
-.progress {
-  width: 50%;
+.container-bar {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
+.bar {
+  margin: auto;
+  width: 90%;
+  position: relative;
+  border: 1px solid #00ffff;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 0;
+  height: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #4587a8 100%);
+}
 
 /* curriculum */
 .boton-cv {
@@ -251,7 +292,7 @@ h1 {
   cursor: pointer;
 }
 .boton-cv:hover {
-  background-color: #1b1b32;
+  background-color: #215355;
   transition:all .50s ease ;
 }
 
@@ -339,29 +380,37 @@ h1 {
 
 /* Certificados */
 .certificados {
-  height: 120vh;
-  min-height: 500px;
+  min-height: 550px;
   padding: 30px;
-
 }
 
 .certificados .card {
   width: 80%;
   max-width: 600px;
-  margin: 20px;
   background: var(--bg-caja);
 }
 
 .card-header {
+  background-color: #1b1b32;
+  color: rgb(255, 255, 255);
   font-weight: bold;
+  text-align: center;
 }
 
 .list-group-item {
   font-size: 1rem;
   font-weight: bold;
-  
+  color: #1b1b32;
+  text-align: center;
 }
 
+.link-certificado {
+  text-decoration: none;
+}
+
+.list-group-item:hover {
+  background-color: #4587a8;
+}
 
 
 /* Testimonio */
@@ -566,11 +615,63 @@ footer {
     height: 300px;
     margin: 60px 0;
   }
+  
 }
 
 @media screen and (min-width:700px) {
   .hero-inferior-imagen {
     max-width: 600px;
+  }
+}
+
+/* skills animation */
+#bar-html {
+  animation: bar-html 2s forwards;
+}
+
+@keyframes bar-html {
+  100% {
+    width: 95%;
+  }
+}
+
+#bar-css {
+  animation: bar-css 2s forwards;
+}
+
+@keyframes bar-css {
+  100% {
+    width: 85%;
+  }
+}
+
+#bar-js {
+  animation: bar-js 2s forwards;
+}
+
+@keyframes bar-js {
+  100% {
+    width: 65%;
+  }
+}
+
+#bar-boost {
+  animation: bar-boost 2s forwards;
+}
+
+@keyframes bar-boost {
+  100% {
+    width: 90%;
+  }
+}
+
+#bar-java {
+  animation: bar-java 2s forwards;
+}
+
+@keyframes bar-java {
+  100% {
+    width: 40%;
   }
 }
 
